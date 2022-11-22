@@ -1,6 +1,6 @@
 import './App.css';
-import PostView from './components/PostView/Post-View' 
-import LandingPage from './components/Landing-Page/Landing-Page';
+import PostView from './components/PostView/PostView' 
+import LandingPage from './components/Landing-Page/LandingPage';
 import CreatePost from './components/PostView/CreatePost';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 

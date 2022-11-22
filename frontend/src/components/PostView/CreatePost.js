@@ -1,4 +1,4 @@
-//  import axios from "axios";
+ import axios from "axios";
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
@@ -20,14 +20,14 @@ const CreatePost = () => {
         formData.append("location", post.location)
         formData.append("description", post.description)
 
-        // const config = {
-        //     headers:{"Content-type:multipart/form-data"}          // telling brower what kind of data it can expect..
-        // }
-        // await axios.post("", formData, config)
-        // .then((res) => {
-        //     console.log("post", res)
+        const config = {
+            headers:{"Content-type:multipart/form-data"}          // telling brower what kind of data it can expect..
+        }
+        await axios.post("", formData, config)
+        .then((res) => {
+            console.log("post", res)
 
-        // }).catch((err) => console.log(err))
+        }).catch((err) => console.log(err))
 
         navigator("/post")
     }

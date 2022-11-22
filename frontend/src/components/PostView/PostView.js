@@ -6,7 +6,7 @@ import axios from 'axios';
 const PostView = () => {
     const [post, setPost] = useState([])
     useEffect(() => {
-        axios.get("https://my-instaclone-server.herokuapp.com/")     // need to change this
+        axios.get("")     // need to change this https://my-instaclone-server.herokuapp.com/
             .then((res) => {
                 setPost(res.data.reverse())         // confusion
             })

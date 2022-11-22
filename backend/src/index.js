@@ -5,14 +5,11 @@ const mongoose = require('mongoose');
 
 dotenv.config();
 //connect to DB
-mongoose.connect("mongodb+srv://haritha:sarada0964@cluster0.9zirfja.mongodb.net/Instaclone?retryWrites=true&w=majority",{ useNewUrlParser: true, useUnifiedTopology: true }, () => {
+mongoose.connect("mongodb+srv://sameerpawar:shivvaa@1@cluster0.ovfxycb.mongodb.net/insta?retryWrites=true&w=majority",{ useNewUrlParser: true, useUnifiedTopology: true }, () => {
     console.log('connected to DB')
 })   // change this part
+// mongodb+srv://sameerpawar:shivvaa@1@cluster0.ovfxycb.mongodb.net/?retryWrites=true&w=majority
 
-
-// mongoose.connect("mongodb://localhost:27017/Instaclone",{ useNewUrlParser: true, useUnifiedTopology: true }, () => {
-//     console.log('connected to DB')
-// })
 
 
 
